@@ -1,14 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temijopelo Jeje | Portfolio</title>
-</head>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-</body>
+  <body>
+    <div class="hero_section" id="hero">
+      <div class="absolute inset-0 bg-black opacity-90"></div>
+      <div class="relative z-10fixed top-0 left-0 w-full bg-transparent">
+        <nav class="flex justify-between items-center max-w-[80%] m-auto">
+          <div class="">
+            <img
+              class="w-32 text-white"
+              src="img/png/logo-white-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="justify-between items-center font-bold gap-5 hidden md:flex"
+          >
+            <ul class="flex justify-between gap-10 text-white">
+              <li><a class="hover:text-gray-500" href="#hero">HOME</a></li>
+              <li><a class="hover:text-gray-500" href="#about">ABOUT</a></li>
+              <li><a class="hover:text-gray-500" href="#work">SERVICES</a></li>
+              <li>
+                <a class="hover:text-gray-500" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+            <ul class="flex gap-2">
+              <li>
+                <a
+                  class="p-1 text-white w-10 h-10 flex justify-center items-center bg-blue-900 rounded-full hover:text-blue-900 hover:bg-white"
+                  href=""
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="p-1 text-white w-10 h-10 flex justify-center items-center bg-blue-900 rounded-full hover:text-blue-900 hover:bg-white"
+                  href=""
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
 
+          <div class="block md:hidden text-white">
+            <div class="text-xl">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+
+        <div
+          class="text-white md:p-40 text-center md:text-left flex justify-center flex-col mt-40 md:mt-0"
+        >
+          <div class="mb-14">
+            <h1
+              class="md:w-[40%] text-5xl font-extrabold leading-normal w-full"
+            >
+              I love to create beautiful and efficient websites
+            </h1>
+          </div>
+
+          <div class="font-semibold flex gap-2 justify-center md:justify-start">
+            <button
+              class="px-8 py-4 bg-blue-800 border-2 border-transparent hover:bg-transparent hover:border-white hover:border-2"
+              type="button"
+            >
+              Discover
+            </button>
+            <button class="px-8 py-4 hover:text-gray-500" type="button">
+              <i class="fa-solid fa-user"></i> Contact Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="bg-blue-100 md:p-24 p-5 text-lg" id="about">
+      <div>
+        <div>
+          <h2 class="text-center font-bold text-3xl p-4">Hi there I'm Temi,</h2>
+          <p class="text-center md:w-[60%] m-auto">
+            And i love to create beautiful and efficient websites for my
+            customers. i love going through the entire process with the customer
+            from concept, to design and then development and launch.
+          </p>
+          <p class="text-center md:w-[80%] m-auto">
+            Experienced frontend developer adept at crafting seamless user
+            experiences. Proficient in HTML, CSS, and JavaScript, with a keen
+            eye for design and usability. Skilled in responsive web design and
+            modern frameworks like React and Angular. Passionate about creating
+            intuitive interfaces that delight users and drive engagement
+          </p>
+        </div>
+
+        <div class="text-center p-5 mt-10">
+          <h4 class="font-bold p-2 text-blue-800">2022 - PRESENT</h4>
+          <h3 class="font-bold p-2">Junior Web Developer</h3>
+          <p>Junior web designer for small agency</p>
+        </div>
+      </div>
+    </aside>
+
+    <article class="p-10">
+      <div class="text-center">
+        <h2 class="font-bold text-2xl">Offered services</h2>
+        <p class="md:w-[50%] text-lg m-auto py-5">
+          Web design and development have been my bread and butter for more han
+          5 years. During that time i've discovered that i can helo sstartups
+          and companies with the following services
+        </p>
+      </div>
+
+      <div
+        class="flex flex-wrap md:max-w-[75%] text-lg pt-5 m-auto justify-between"
+      >
+        <div class="border-2 border-gray-200 md:w-[30%] p-9">
+          <i class="text-blue-900 text-5xl w-10 fa-regular fa-gem"></i>
+          <h4 class="py-5 font-bold text-lg">DESIGN</h4>
+          <p>
+            Sucessful online projectrs start with good design. It establish a
+            solid foundation for future development and allows for long term
+            growth
+          </p>
+        </div>
+        <div class="border-2 border-gray-200 md:w-[30%] p-9">
+          <i class="text-blue-900 text-5xl w-10 fa-solid fa-code"></i>
+          <h4 class="py-5 font-bold text-lg">DEVELOPMENT</h4>
+          <p>
+            I can code my own designs or even use the customers design as base.
+            My focus is to generate clean code that's well structured
+          </p>
+        </div>
+        <div class="border-2 border-gray-200 md:w-[30%] p-9">
+          <i class="text-blue-900 text-5xl w-10 fa-solid fa-desktop"></i>
+          <h4 class="py-5 font-bold text-lg">BASIC SEO</h4>
+          <p>
+            I can setup your project to use basic SEO prinxiples whixh will push
+            your project to the first page on search enginers and save you ads
+            money
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <aside class="flex flex-wrap bg-blue-100 p-10">
+      <div class="md:w-[50%]">
+        <img
+          class="w-screen md:w-full h-[700px] object-contain"
+          src="img/JOPE01.jpg"
+          alt=""
+          srcset=""
+        />
+      </div>
+
+      <div
+        class="md:w-[30%] p-16 md:p-0 flex flex-col justify-center text-lg gap-5 items-center"
+      >
+        <div>
+          <h3 class="font-bold py-3 text-2xl">Why work with me</h3>
+          <p>
+            I'm a great communicator and love to invest the necessary time to
+            understand the customer's problem very well
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-bold py-3 text-xl">DEVELOMENT SKILLS</h3>
+          <p>
+            I am familair and work on a daily basis with HTML, CSS, JavaScript,
+            tailwindcss and other modern frameworks
+          </p>
+        </div>
+
+        <div class="self-start">
+          <img
+            class="w-60"
+            src="img/responsive-web-design-web-development-html-css3-cascading-style-sheets-world-wide-web-2948cdc6d5c2a06c42409a59326ad5bc.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+    </aside>
+
+    <main id="work">
+      <div class="text-center text-lg">
+        <h2 class="font-bold text-2xl mt-5">Delivered Projects</h2>
+        <p class="md:w-[50%] p-10 m-auto">
+          Listed below are some of the most representative projects i have
+          worked on. They ramge from basic web design for presentation sites to
+          advanced web devekopment for omline shops
+        </p>
+      </div>
+
+      <div class="w-[75%] m-auto">
+        <div class="py-12">
+          <div class="overflow-hidden">
+            <a href="https://temijopelo.github.io/fintech-x/">
+              <img
+                class="object-fill transition-transform duration-300 ease-in-out hover:scale-110"
+                src="img/fintechX.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <p>
+            fintechX: Web design for a corporate websites
+            <span
+              ><a
+                class="underline text-blue-700"
+                href="https://github.com/temijopelo/fintech-x.git"
+                >details</a
+              ></span
+            >
+          </p>
+        </div>
+
+        <div class="py-12">
+          <div class="overflow-hidden">
+            <a href="https://temijopelo.github.io/to-do-list-veph/">
+              <img
+                class="object-fill transition-transform duration-300 ease-in-out hover:scale-110"
+                src="img/TODO.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <p>
+            To-Do: To-do task
+            <span
+              ><a
+                class="underline text-blue-700"
+                href="https://github.com/temijopelo/to-do-list-veph.git"
+                >details</a
+              ></span
+            >
+          </p>
+        </div>
+
+        <div class="py-12">
+          <div class="overflow-hidden">
+            <a href="https://temijopelo.github.io/home-of-decor/">
+              <img
+                class="object-fill transition-transform duration-300 ease-in-out hover:scale-110"
+                src="img/home-of-decor.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <p>
+            Home of decor: project tasks
+            <span
+              ><a
+                class="underline text-blue-700"
+                href="https://github.com/temijopelo/home-of-decor.git"
+                >details</a
+              ></span
+            >
+          </p>
+        </div>
+        <div class="py-12">
+          <div class="overflow-hidden">
+            <a href="https://temijopelo.github.io/kudi-fintech/">
+              <img
+                class="object-fill transition-transform duration-300 ease-in-out hover:scale-110"
+                src="img/kudi_ss.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <p>
+            Kudi: Fintech task
+            <span
+              ><a
+                class="underline text-blue-700"
+                href="https://github.com/temijopelo/kudi-fintech.git"
+                >details</a
+              ></span
+            >
+          </p>
+        </div>
+
+        <div class="py-12">
+          <div class="overflow-hidden">
+            <a href="https://temijopelo.github.io/projectBlu/">
+              <img
+                class="object-fill transition-transform duration-300 ease-in-out hover:scale-110"
+                src="img/blu.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <p>
+            Blu: Fintech task
+            <span
+              ><a
+                class="underline text-blue-700"
+                href="https://github.com/temijopelo/projectBlu.git"
+                >details</a
+              ></span
+            >
+          </p>
+        </div>
+
+        <div class="md:flex flex-wrap justify-between text-lg py-5 hidden">
+          <div class="w-[30%] py-5">
+            <div class="overflow-hidden">
+              <a href="https://temijopelo.github.io/Doordash/">
+                <img
+                  class="h-[200px] object-fill transition-transform duration-300 ease-in-out hover:scale-110"
+                  src="img/doordash.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <p>
+              Doordash: Fintech task
+              <span
+                ><a
+                  class="underline text-blue-700"
+                  href="https://github.com/temijopelo/Doordash.git"
+                  >details</a
+                ></span
+              >
+            </p>
+          </div>
+          <div class="w-[30%] py-5">
+            <div class="overflow-hidden">
+              <a
+                href="https://temijopelo.github.io/huddle-landing-page-with-single-introductory-section-master/"
+              >
+                <img
+                  class="h-[200px] object-fill transition-transform duration-300 ease-in-out hover:scale-110"
+                  src="img/huddle.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <p>
+              huddle
+              <span
+                ><a
+                  class="underline text-blue-700"
+                  href="https://github.com/temijopelo/huddle-landing-page-with-single-introductory-section-master.git"
+                  >details</a
+                ></span
+              >
+            </p>
+          </div>
+          <div class="w-[30%] py-5">
+            <div class="overflow-hidden">
+              <a href="https://temijopelo.github.io/EE-Tasks/">
+                <img
+                  class="h-[200px] object-fill transition-transform duration-300 ease-in-out hover:scale-110"
+                  src="img/EE.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <p>
+              EE: telecommunication website task
+              <span
+                ><a
+                  class="underline text-blue-700"
+                  href="https://github.com/temijopelo/EE-Tasks.git"
+                  >details</a
+                ></span
+              >
+            </p>
+          </div>
+          <div class="w-[30%] py-5">
+            <div class="overflow-hidden">
+              <a href="https://temijopelo.github.io/voxmedia/">
+                <img
+                  class="h-[200px] object-fill transition-transform duration-300 ease-in-out hover:scale-110"
+                  src="img/VOXMEDIA.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <p>
+              VOXMEDIA: Media website task
+              <span
+                ><a
+                  class="underline text-blue-700"
+                  href="https://github.com/temijopelo/voxmedia.git"
+                  >details</a
+                ></span
+              >
+            </p>
+          </div>
+          <div class="w-[30%] py-5">
+            <div class="overflow-hidden">
+              <a href="https://temijopelo.github.io/nour/">
+                <img
+                  class="h-[200px] object-fill transition-transform duration-300 ease-in-out hover:scale-110"
+                  src="img/NOUR.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <p>
+              Nour: Restaurant website task
+              <span
+                ><a
+                  class="underline text-blue-700"
+                  href="https://github.com/temijopelo/nour.git"
+                  >details</a
+                ></span
+              >
+            </p>
+          </div>
+          <div class="w-[30%]">
+            <div class="overflow-hidden">
+              <a href="https://temijopelo.github.io/vephla/">
+                <img
+                  class="h-[200px] object-fill transition-transform duration-300 ease-in-out hover:scale-110"
+                  src="img/VEPHLA.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <p>
+              Vephla: Vephla recreation task
+              <span
+                ><a
+                  class="underline text-blue-700"
+                  href="https://github.com/temijopelo/vephla.git"
+                  >details</a
+                ></span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="md:hidden p-4 text-black text-2xl italic underline">
+          <a href="#">Click here to see more projects</a>
+        </div>
+      </div>
+    </main>
+
+    <div class="testimonials bg-blue-100" id="about">
+      <div class="testi_top flex flex-col gap-0">
+        <h4 class="text-xl font-bold">TESTIMONIALS</h4>
+        <p class="w-screen">
+          “ Working with Temi was an absolute pleasure from start to finish. His
+          creativity knows no bounds, and he has an incredible.”
+        </p>
+      </div>
+
+      <div class="testi-toggle">
+        <p>1/5</p>
+
+        <div>
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <div class="user">
+          <h5>Akintomiwa</h5>
+          <h6>Freelance Product Designer</h6>
+        </div>
+      </div>
+
+      <div class="navigate-btn"></div>
+    </div>
+
+    <footer id="contact">
+      <h2>Temijopelo Jeje</h2>
+
+      <div class="top_footer">
+        <div class="social_footer">
+          <h5>Socials</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/jopss_x">Instagram</a></li>
+            <li><a href="https://x.com/JopeJeje">Twitter</a></li>
+            <li><a href="https://www.behance.net/temijeje">Behance</a></li>
+          </ul>
+        </div>
+        <table class="hidden md:block">
+          <tr>
+            <th>T:</th>
+            <td>+234 (0) 907 904 1084</td>
+          </tr>
+          <tr>
+            <th>E:</th>
+            <td>Temijeje@gmail.com</td>
+            <td>Temijeje@hotmail.com</td>
+          </tr>
+        </table>
+      </div>
+
+      <hr />
+
+      <div class="get-in-touch hidden md:block">
+        <p>Get in touch</p>
+      </div>
+
+      <p class="copy">&copy; Copyright Temi Jeje</p>
+    </footer>
+  </body>
 </html>

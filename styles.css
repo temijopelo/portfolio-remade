@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero_section {
+  background-image: url(img/JOPE02.jpg);
+  background-position: calc(50% + 0px) calc(50% - -300px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+/* testimonal  */
+
+.testimonials {
+  padding: 10rem 0;
+}
+
+.testi_top {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20rem;
+  margin-bottom: 150px;
+}
+
+.testi_top h4 {
+  font-size: 1.2rem;
+}
+
+.testi_top p {
+  font-size: 2.4rem;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.testi-toggle {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  font-weight: 500;
+  justify-content: space-between;
+}
+
+.testi-toggle p {
+  font-size: 1.5rem;
+}
+
+.testi-toggle div i {
+  font-size: 2rem;
+  margin: 0 20px;
+}
+
+.user {
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+/* footer  */
+
+footer {
+  display: flex;
+  background-color: black;
+  color: #fff;
+  padding: 8rem;
+  flex-direction: column;
+  position: relative;
+}
+
+.social_footer {
+  order: 1;
+}
+
+.social_footer h5 {
+  font-size: 1.3rem;
+  opacity: 0.4;
+  font-weight: 300;
+}
+.social_footer ul {
+  display: flex;
+  gap: 20px;
+}
+
+.social_footer ul li {
+  font-size: 1.6rem;
+}
+
+.social_footer ul li a {
+  color: #fff;
+}
+
+footer h2 {
+  order: 3;
+  font-size: 5rem;
+  margin: 50px 0;
+}
+
+footer table {
+  order: 2;
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+footer .copy {
+  order: 4;
+  opacity: 0.4;
+  font-size: 0.8rem;
+}
+
+footer .top_footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+footer hr {
+  opacity: 0.4;
+}
+
+footer .get-in-touch p {
+  background-color: #ffc83b;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 2rem;
+  position: absolute;
+  right: 15%;
+  top: 13.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* Testimonials  */
+
+  .testimonials {
+    padding: 4rem 1.5rem;
+  }
+
+  .testimonials h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+
+  .testimonials p {
+    font-size: 2rem;
+    line-height: 2;
+    margin: 2rem 0;
+  }
+
+  .testimonials h5 {
+    font-size: 1.2rem;
+  }
+
+  .testimonials h6 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 3rem 0;
+  }
+
+  footer h2 {
+    font-size: 3rem;
+    padding: 6rem 2rem 3rem;
+    width: 30%;
+  }
+
+  footer h5 {
+    padding: 2rem;
+    font-size: 1.5rem;
+    opacity: 0.5;
+    font-weight: 400;
+  }
+
+  footer ul {
+    padding-left: 2rem;
+  }
+
+  footer li {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  footer a {
+    color: #fff;
+  }
+
+  footer table {
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.5;
+  }
+}
